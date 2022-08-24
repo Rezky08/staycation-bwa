@@ -1,0 +1,41 @@
+/*Bootstrap core imports - adjust for your case*/
+@import "~bootstrap/scss/functions";
+
+$custom-theme-colors: (
+        "danger": #FF498B,
+        "link" : #3252DF
+);
+@import "~bootstrap/scss/variables";
+
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/mixins";
+
+$font-family-sans-serif: Poppins, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-base: $font-family-sans-serif !default;
+
+@import "~bootstrap/scss/bootstrap";
+@import "font";
+
+:root {
+  --bs-body-font-family: Poppins, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a, body, p {
+  color: var(--bs-dark);
+}
+
+.navbar {
+  a, a:hover, .nav-link, span {
+    font-weight: 500;
+    color: var(--bs-dark);
+  }
+}

@@ -1,0 +1,20 @@
+.landing-navbar {
+  border-bottom: thin solid var(--bs-gray-200);
+  .navbar{
+    padding: 1.2rem 0;
+  }
+  .nav {
+    &-navbar {
+      font-size: 1.2rem;
+      gap:2rem
+    }
+
+    &-link {
+      &:hover{
+        font-weight: normal;
+        color: var(--bs-link-color);
+      }
+      font-weight: normal;
+    }
+  }
+}
